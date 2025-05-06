@@ -1,0 +1,18 @@
+
+- great topic
+- you should definitely check for 200 status code and use a try except just in case. (Uhhh, you’re doing it for your other calls, are you using AI to generate this code? Make sure you know what it’s doing)
+- it’s best to check your merges don’t lose too much data
+- i see 8 components in your PCA using the elbow method
+- there’s a thing called canonical correlation if you want to PCA the X and Y separately but still maximize the correlation between the 2.
+- i would try to look at the distribution of total_conflict over time, is this like a excitable process (e.g. earthquake models) or is this something else.
+- remember that Random Forest is best when the trees are deep, limiting to a max depth of 3 seems wrong (that’s more for boosting)
+- so what is feature 14? Is it crop_yield? Why isn’t this just on your plot?
+- your linear models could definitely use a different cutoff (look how half of your 0’s are split into 0 and 1)
+- i don’t understand why you have a chapter on non-cross validated results? Is it just EDA for the best case scenario?
+- your cross validated R^2 values are so high for gradient boosting…
+- so…you create the y_class so you can control the imbalanced-ness (based on your cutoffs).
+- your later model performances are very good but your earlier model performances are poor (it seems since OLS did almost the best?)….this is simply from casting the y from a continuous thing to classification. This decision should be made upfront.
+- also, should you be time-lagging your protests vs your total conflict?
+- i think there’s not a clear benchmark for me to understand what is reasonable?
+- i think modeling “changes” in the features might be good, e.g. increasing inflation or worsening food security etc.
+- there’s a lot of repeated work…..
